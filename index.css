@@ -4,3 +4,80 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left a {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header__right > * {
+  margin-right: 25px;
+}
+
+.header__right i {
+  color: white;
+}
+
+.input-group button.position-absolute {
+  height: 100%;
+  right: 15px;
+  border: none;
+  background: transparent;
+}
+
+/* start banner */
+.banner {
+  height: 700px;
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(./image/banner1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.banner__content {
+  max-width: 600px;
+}
+
+.banner__content h3 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.banner__content a {
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.btn::ac {
+  transition: none;
+}
+.btn-white {
+  transition: all 0.3s;
+}
+
+.btn-white:hover {
+  background: white;
+  color: #ff6600;
+}

@@ -17,6 +17,15 @@
       crossorigin="anonymous"
     />
 
+    <!-- icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- google fonts -->
     <link
       href="//fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -32,6 +41,54 @@
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <div class="header__content py-4 d-flex justify-content-between">
+          <div class="header__left">
+            <a href="#">Diner</a>
+          </div>
+          <div class="header__right d-flex align-items-center">
+            <!-- search box  -->
+            <div class="input-group">
+              <div class="form-outline position-relative">
+                <input
+                  type="search"
+                  id="form1"
+                  class="form-control position-relative pe-5 py-2"
+                  placeholder="Search here.."
+                />
+              </div>
+              <button type="button" class="position-absolute">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <!-- search box -->
+
+            <!-- Darkmode -->
+            <i class="fa fa-moon fs-4"></i>
+            <!-- Darkmode end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner py-5">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="banner__content">
+          <h3 class="text-white mb-4">
+            The Only Thing We Love More Than Food Is You!
+          </h3>
+          <p class="pr-lg-5 mt-md-4 mt-3 text-white">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+          <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">
+            Read More &nbsp;
+            <span class="fa fa-chevron-right" aria-hidden="true"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section></section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
