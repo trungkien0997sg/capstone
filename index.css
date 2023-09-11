@@ -5,6 +5,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
+p {
+  color: rgba(22, 28, 45, 0.7);
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -61,23 +65,41 @@ header {
 }
 
 .banner__content a {
+  display: inline-block;
   border: 2px solid white;
   color: white;
   border-radius: 8px;
-  padding: 12px 45px;
+  padding: 18px 45px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.btn::ac {
-  transition: none;
-}
-.btn-white {
-  transition: all 0.3s;
-}
-
-.btn-white:hover {
+.banner__content a:hover {
   background: white;
   color: #ff6600;
+}
+
+/* start about */
+
+.about__text {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 10px;
+}
+
+.about__title h6 {
+  font-family: "Pacifico", cursive;
+  color: #ff6600;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.about__title h3 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 48px;
 }
