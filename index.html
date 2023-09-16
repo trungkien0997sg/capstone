@@ -41,7 +41,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header__content py-4 d-flex justify-content-between">
           <div class="header__left">
@@ -49,24 +49,57 @@
           </div>
           <div class="header__right d-flex align-items-center">
             <!-- search box  -->
-            <div class="input-group">
-              <div class="form-outline position-relative">
-                <input
-                  type="search"
-                  id="form1"
-                  class="form-control position-relative pe-5 py-2"
-                  placeholder="Search here.."
-                />
-              </div>
-              <button type="button" class="position-absolute">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
+            <form class="d-none d-sm-block search__box position-relative">
+              <input type="search" placeholder="Search here.." />
+              <i class="fa fa-search"></i>
+            </form>
             <!-- search box -->
 
             <!-- Darkmode -->
-            <i class="fa fa-moon fs-4"></i>
+            <div class="darkmode">
+              <i class="fa fa-moon fs-4"></i>
+            </div>
             <!-- Darkmode end -->
+            <!-- navigation start -->
+            <div class="nav__overlay">
+              <div class="nav__content">
+                <button type="button" id="overlay-close">
+                  <i class="fa fa-times"></i>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Service</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog Posts</a>
+                  </li>
+                  <li>
+                    <a href="#">404 page</a>
+                  </li>
+                  <li>
+                    <a href="#">Elements</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Landing page</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="show">
+              <button type="button" id="overlay-open">
+                <i class="fa fa-bars fs-3"></i>
+              </button>
+            </div>
+            <!-- navigation start -->
           </div>
         </div>
       </div>
@@ -92,7 +125,7 @@
     <!-- About us  -->
     <section class="about py-5">
       <div class="container">
-        <div class="row about__content py-lg-5">
+        <div class="row about__content py-lg-4">
           <div class="about__title col-lg-5">
             <div class="title__text">
               <h6>About us</h6>
@@ -121,9 +154,50 @@
 
     <!-- service -->
     <section class="service">
-      <div class="container"></div>
+      <div class="container-fluid row h-100">
+        <div class="left__content col-lg-6">
+          <div class="img__place">
+            <img src="./image/banner3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right__content col-lg-6">
+          <div
+            class="content__container d-flex flex-column justify-content-center"
+          >
+            <div class="above__text ps-lg-5">
+              <h6>More than 3000 Restaurants</h6>
+              <h3>Book a table easly at the best price</h3>
+              <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis
+                sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+                tesque et libero ut justo ultrices in.
+              </p>
+            </div>
+            <div class="best__content d-flex ps-lg-5">
+              <div class="best-left">
+                <div class="icon">
+                  <span class="fa fa-thumbs-up"></span>
+                </div>
+                <a href="#">Best Deals</a>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+              <div class="best-right">
+                <div class="icon">
+                  <span class="fa fa-cutlery"></span>
+                </div>
+                <a href="#">Best Deals</a>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- backToTop -->
+    <a href="#" class="backToTop" id="back-to-top"
+      ><i class="fa fa-chevron-up"></i
+    ></a>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -136,5 +210,31 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- navigation script -->
+    <script>
+      document
+        .getElementById("overlay-open")
+        .addEventListener("click", function () {
+          document.querySelector(".nav__overlay").classList.add("active");
+        });
+
+      document
+        .getElementById("overlay-close")
+        .addEventListener("click", function () {
+          document.querySelector(".nav__overlay").classList.remove("active");
+        });
+    </script>
+
+    <!-- hide back to top header -->
+    <script>
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 200) {
+          document.getElementById("back-to-top").style.display = "inline-block";
+        } else {
+          document.getElementById("back-to-top").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
