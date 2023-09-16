@@ -163,16 +163,6 @@ p {
   color: #ff6600;
 }
 
-@media screen and (max-width: 480px) {
-  .banner__content a {
-    padding: 10px 25px;
-  }
-  .banner__content h3 {
-    font-size: 2rem;
-    line-height: normal;
-  }
-}
-
 /* start about */
 
 .about__text {
@@ -202,22 +192,97 @@ p {
   background-color: #ff6600;
 }
 
-.left__content {
-  padding: 0;
+.row {
+  height: 100%;
 }
 
-.left__content .img__place img {
-  /* background-image: url(./image/banner3.jpg);
-  background-size: 135%;
-  background-position: center;
-  background-repeat: no-repeat; */
+.left__content {
+  padding: 0;
+  position: relative;
+}
+
+.left__content img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.left__content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content__container {
+  padding-top: 70px;
 }
 
 .right__content .content__container {
   height: 100%;
 }
+
+.right__content .content__container h6 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+.right__content .content__container h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.right__content p {
+  color: #ffdfc9;
+  font-size: 18px;
+}
+
+.right__content .best__content a {
+  text-decoration: none;
+  color: #232121;
+  font-weight: 600;
+  font-size: 22px;
+  display: block;
+}
+
+.best__content p {
+  margin-top: 10px;
+}
+
+/* best */
+
+/* icon hover */
+.best__content > *:hover span {
+  color: #ffc600;
+  transition: 0.4s;
+}
+
+.icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.icon span {
+  line-height: 70px;
+  color: #ff6600;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* end service */
+
+/* back to top css */
 
 .backToTop {
   position: fixed;
@@ -234,4 +299,37 @@ p {
 
 .backToTop i {
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .banner__content a {
+    padding: 10px 25px;
+  }
+  .banner__content h3 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner__content h3.text-white {
+    font-size: 44px;
+  }
+
+  .left__content {
+    min-height: 250px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  .right__content .content__container {
+    padding: 30px;
+  }
+
+  .right__content .content__container h3 {
+    font-size: 27px;
+  }
+  .right__content .content__container p {
+    font-size: 16px;
+  }
 }
