@@ -62,6 +62,48 @@ p {
   padding-top: 5px;
 }
 
+/* darkmode start */
+/* setting button start */
+.darkmode button {
+  background: transparent;
+  border: none;
+}
+
+.darkmode .light-mode-option {
+  display: none;
+}
+
+.darkmode button.active .light-mode-option {
+  display: inline;
+}
+.darkmode button.active .dark-mode-option {
+  display: inline;
+}
+/* setting button end */
+
+/* custom darkmode */
+.dark-mode-switch {
+  background-color: #232220;
+}
+.dark-mode-switch p {
+  color: #c2d0da;
+}
+.dark-mode-switch h3 {
+  color: #eee;
+}
+
+input.dark-mode-switch {
+  border-radius: 5px;
+  background-color: #232121;
+  color: #eee;
+}
+
+.header__right i.dark-mode-switch {
+  color: white;
+}
+
+/* darkmode end */
+
 /* navigation */
 .nav__overlay {
   position: fixed;

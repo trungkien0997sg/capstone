@@ -50,16 +50,24 @@
           <div class="header__right d-flex align-items-center">
             <!-- search box  -->
             <form class="d-none d-sm-block search__box position-relative">
-              <input type="search" placeholder="Search here.." />
-              <i class="fa fa-search"></i>
+              <input
+                class="dark-mode-able"
+                type="search"
+                placeholder="Search here.."
+              />
+              <i class="fa fa-search dark-mode-able"></i>
             </form>
             <!-- search box -->
 
             <!-- Darkmode -->
             <div class="darkmode">
-              <i class="fa fa-moon fs-4"></i>
+              <button id="dark-mode-toggle">
+                <i class="fa fa-moon fs-4 dark-mode-option"></i>
+                <i class="fa fa-sun fs-4 light-mode-option"></i>
+              </button>
             </div>
             <!-- Darkmode end -->
+
             <!-- navigation start -->
             <div class="nav__overlay">
               <div class="nav__content">
@@ -123,7 +131,7 @@
       </div>
     </section>
     <!-- About us  -->
-    <section class="about py-5">
+    <section class="about py-5 dark-mode-able">
       <div class="container">
         <div class="row about__content py-lg-4">
           <div class="about__title col-lg-5">
@@ -231,6 +239,29 @@
           document.getElementById("back-to-top").style.display = "inline-block";
         } else {
           document.getElementById("back-to-top").style.display = "none";
+        }
+      });
+    </script>
+
+    <!-- Darkmode -->
+    <script>
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      const darkModeElements =
+        document.getElementsByClassName("dark-mode-able");
+
+      darkModeToggle.addEventListener("click", () => {
+        darkModeToggle.classList.toggle("active");
+
+        const isActive = darkModeToggle.classList.contains("active");
+
+        if (isActive) {
+          darkModeToggle.innerHTML = `<i class="fa fa-sun fs-6 light-mode-option"></i>`;
+        } else {
+          darkModeToggle.innerHTML = `<i class="fa fa-moon fs-4 dark-mode-option"></i>`;
+        }
+
+        for (const element of darkModeElements) {
+          element.classList.toggle("dark-mode-switch", isActive);
         }
       });
     </script>
