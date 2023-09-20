@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner {
+    overflow: hidden;
+}
+.title-1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.title-2{
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 600;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.mt-5{
+    margin-top: 3rem !important;
+}
+.card{
+    border: none;
+}
+.card-body{
+    cursor: pointer;
+}
+.card-img img{
+    cursor: pointer;
+    width: 100%;
+    object-position: top;
+    border-radius: 10px;
+
+}
+.card-footer-w3{
+    display: flex;
+    cursor: pointer;
+}
+.card-footer-w4 {
+    padding-left: 190px;
+    transition: 0.5s;
+}
+.card-footer-w4 a{
+    transition: 0.5s;
+}
+.card-footer-w3 a , .card-footer-w4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+.card-footer-w3 img{
+    width: 40px;
+    height: 50%;
+}
+.card-footer-w4:hover, .card-footer-w4:hover a {
+    color: #ff6600;
+
+}
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+    background-color: #35a22c;
+}
+.carousel-indicators{
+    margin-bottom: 3rem;
+}
+
+.carousel-item img{
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.carousel-item span.fa.fa-quote-left {
+    font-size: 26px;
+    display: block;
+    color: #ff6600;
+    text-align: center;
+}
+.carousel-item .carousel-text {
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.carousel-inner p {
+    font-size: 18px;
+    color: rgba(22,28,45, 0.6);
+    display: block;
+    text-align: center;
+    padding: 0px 430px;
+}
+.carousel-end-1 h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.carousel-end-1 p.carousel-end-2 {
+    text-align: center;
+    opacity: 0.8s;
+    font-size: 18px;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #ff6600;
+    font-size: 16px;
+}
+.slick-dots li button::before {
+    font-size: 16px;
+}
+.slick-dots ul:hover  {
+    color: #ff6600;
+}
+
+
+
+/* start footer */
+.footer *{
+color: white;
+}
+
+.footer {
+    background: black;
+    padding: 50px 0px;
+}
+.row .col-lg-3 p{
+    width: 100%;
+}
+.row-title {
+    padding: 20px 0px;
+}
+
+.row-title  h3{
+    font-size: 24px;   
+}
+.row-content a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #a5a2a1;
+    line-height: 25px;
+} 
+#row-content-1 {
+    padding-top: 10px;
+}
+.row-content-2{
+    font-size: 16px;
+    color: #a5a2a1;
+    line-height: 25px;
+}
+.row-content p{
+    color: #a5a2a1;
+    line-height: 25px;
+    font-size: 16px;
+}
+.social a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10%;
+    margin-right:8px;
+}
+.social i{
+    color: #ff6600;
+}
+.social a:hover i{
+    color: white;
+    transition: 0.3s;
+}
+.social a:hover{
+    background-color: #ff6600;
+    transition: 0.3s;
+}
+#form-1 {
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    width: 70%;
+    color: rgba(22,28,45, 0.6);
+    background: white;
+    border-radius: 6px;
+    padding: 14px 20px;
+}
+.btn-primary {
+    color: white;
+    background-color: #ff6600;
+    
+}
+.btn-form {
+    padding: 14px 20px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 600;
+    border:2px solid transparent;
+    transition: 0.3s;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 70%;
+}
+.btn-form:hover:hover{
+    background-color: #b24903;
+    transition: 0.5s;
+    color: rgb(211, 211, 211);
+}
+/* start copyright */
+.copyright {
+    padding: 0.5rem 0;
+    background: black;
+    border-top: 1px solid rgb(225 225 225 /5%);
+    display: block;
+}
+.copyright .bottom-copy {
+    color: #ddd;
+}
+.copyright .bottom-copy a { 
+    text-decoration: none;
+    color:#ff6600;
+}
+.copyright .bottom-copy a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
