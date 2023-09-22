@@ -1252,6 +1252,13 @@ section.Blog.dark-mode-switch * {
   color: white;
 }
 
+section.Blog.dark-mode-switch .title-1 {
+  color: #ff6600;
+}
+section.Blog.dark-mode-switch .title-2 {
+  color: unset;
+}
+
 section.Blog.dark-mode-switch a {
   background-color: #282828;
   color: white;
