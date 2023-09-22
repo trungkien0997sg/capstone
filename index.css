@@ -526,9 +526,6 @@ section.service .row {
 }
 
 /* middle */
-.middle {
-  position: relative;
-}
 .middle-img {
   width: 100%;
   height: 65vh;
@@ -630,9 +627,7 @@ section.service .row {
   color: #fff;
   text-align: center;
 }
-.res .item {
-  width: 25%;
-}
+
 .res .item h3 {
   font-size: 40px;
   font-weight: 600;
@@ -642,13 +637,15 @@ section.service .row {
 .res .item p {
   font-weight: 600;
 }
-.w3_stats {
-  position: absolute;
-  top: 80%;
-  width: 100%;
+
+section.w3_stats {
+  margin-top: -70px;
+  z-index: 10;
+  position: relative;
 }
+
 @media screen and (max-width: 990px) {
-  .w3_stats {
+  section.w3_stats {
     position: unset;
   }
   section.w3-stats .container {
@@ -689,6 +686,7 @@ section.Blog .mt-5 {
 }
 section.Blog .card {
   border: none;
+  background-color: transparent;
 }
 section.Blog .card-body {
   cursor: pointer;
@@ -710,6 +708,11 @@ section.Blog .card-footer-w4 {
   align-items: center;
   width: 100%;
   /* padding-left: 190px; */
+}
+
+section.Blog .card-footer-w4 i {
+  padding-top: 2px;
+  margin: 0 3px;
 }
 
 section.Blog .card-footer-w3 a,
@@ -1225,20 +1228,25 @@ section.Services.overflow-hidden .dark-mode-switch .box-wrap .icon {
   background-color: unset;
 }
 
-.res.dark-mode-switch .item .counter {
+.w3-stats .item.dark-mode-switch .counter {
   background-color: #282828;
 }
-.res.dark-mode-switch .item .counter .icon {
+
+.w3-stats .item.dark-mode-switch {
+  border-radius: 5px;
   background-color: unset;
 }
 
-.res.dark-mode-switch .item h3 {
+.w3-stats .item.dark-mode-switch .counter .icon {
+  background-color: unset;
+}
+
+.w3-stats .item.dark-mode-switch h3 {
   color: white;
 }
 
-.res.dark-mode-switch .counter:hover {
+.w3-stats .item.dark-mode-switch .counter:hover {
   box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 5px 0px;
-
   transform: translateY(-10px);
   transition: 0.7s;
 }
