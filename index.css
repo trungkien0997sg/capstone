@@ -816,6 +816,9 @@ section.testimonials .title-2 {
 .slick-dots ul:hover {
   color: #ff6600;
 }
+.slick-dots li button:hover::before {
+  color: #ff6600;
+}
 
 /* start footer */
 .footer * {
