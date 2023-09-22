@@ -81,27 +81,6 @@ p {
 }
 /* setting button end */
 
-/* custom darkmode */
-.dark-mode-switch {
-  background-color: #232220;
-}
-.dark-mode-switch p {
-  color: #c2d0da;
-}
-.dark-mode-switch h3 {
-  color: #eee;
-}
-
-input.dark-mode-switch {
-  border-radius: 5px;
-  background-color: #232121;
-  color: #eee;
-}
-
-.header__right i.dark-mode-switch {
-  color: white;
-}
-
 /* darkmode end */
 
 /* navigation */
@@ -328,6 +307,7 @@ section.service .row {
 
 .backToTop {
   position: fixed;
+  z-index: 1;
   bottom: 40px;
   right: 30px;
   cursor: pointer;
@@ -680,6 +660,10 @@ section.service .row {
 
 /* blog post */
 
+section.Blog {
+  background-color: #f7f7f7;
+}
+
 section.Blog .title-1 {
   font-size: 20px;
   font-weight: 500;
@@ -718,9 +702,14 @@ section.Blog .card-img img {
 section.Blog .card-footer-w3 {
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 section.Blog .card-footer-w4 {
-  padding-left: 190px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  /* padding-left: 190px; */
 }
 
 section.Blog .card-footer-w3 a,
@@ -733,6 +722,7 @@ section.Blog .card-footer-w3 a,
 section.Blog .card-footer-w3 img {
   width: 40px;
   height: 50%;
+  border-radius: 50%;
 }
 section.Blog .card-footer-w4:hover > * {
   color: #ff6600;
@@ -939,4 +929,335 @@ section.testimonials .title-2 {
 .copyright .bottom-copy a:hover {
   color: white;
   transition: 0.5s;
+}
+
+/* Minh CSS */
+
+/*nut an*/
+
+/* Popup*/
+#small-dialog {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
+}
+div#small-dialog iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+.mfp-close,
+.mfp-close:active {
+  top: -40px;
+}
+
+/**
+           * Fade-zoom animation for first dialog
+           */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.95;
+}
+n-relative
+        /* animate out */
+        .my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+/* end html Minh */
+
+/* Minh file css */
+/*-- //team --*/
+/*--/w3l-videohny --*/
+.new-block {
+  background: #fff;
+}
+
+.w3l-videohny .history-info {
+  background: url(./images/banner3.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  min-height: 500px;
+  border-radius: 6px;
+}
+
+.w3l-videohny .history-info:before {
+  content: "";
+  background: rgb(16 15 19 / 60%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.w3l-videohny span.video-play-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  background: #ff6600;
+  border: transparent;
+  color: #fff;
+}
+
+.w3l-videohny .play-view {
+  left: 0;
+  right: 0;
+  top: calc(50% - 40px);
+}
+
+.w3l-videohny span.video-play-icon {
+  display: inline-flex;
+  width: 80px;
+  height: 80px;
+  font-size: 26px;
+  padding-left: 2px;
+  text-align: center;
+  line-height: 76px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: ripple 1s linear infinite;
+  animation: ripple 1s linear infinite;
+  color: #ff6600;
+  border: transparent;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
+
+@media all and (max-width: 900px) {
+  .w3l-videohny .history-info {
+    min-height: 400px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .w3l-videohny .history-info {
+    min-height: 350px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .w3l-videohny .history-info {
+    min-height: 300px;
+  }
+}
+
+.w3l-error-grid h1 {
+  font-weight: 700;
+  font-size: 130px;
+  color: #232121;
+  letter-spacing: 5px;
+}
+
+.w3l-error-grid h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #232121;
+  font-weight: 600;
+}
+
+.w3l-error-grid .form-control {
+  color: rgba(22, 28, 45, 0.7);
+  padding: 12px 120px 12px 25px;
+  font-size: 18px;
+  line-height: 28px;
+  height: 55px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  display: block;
+  font-weight: 500;
+}
+
+.error-block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.w3l-error-grid .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ff6600;
+}
+
+.w3l-error-grid button.btn.search {
+  color: #fff;
+  background: #ff6600;
+  font-size: 18px;
+  padding: 0 40px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.w3l-error-grid button.btn.search:hover {
+  opacity: 0.8;
+}
+
+.w3l-error-grid .form-inline.search-form {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.w3l-error-grid .back-button {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 18px;
+  color: #232121;
+  letter-spacing: 0;
+}
+
+.w3l-error-grid .back-button span.fa {
+  font-size: 14px;
+  vertical-align: 1px;
+}
+
+.w3l-error-grid .back-button:hover {
+  color: #ff6600;
+}
+
+@media all and (max-width: 992px) {
+  .w3l-error-grid h1 {
+    font-size: 100px;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .w3l-error-grid h1 {
+    font-size: 80px;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .w3l-error-grid h2 {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 384px) {
+  .w3l-error-grid button.btn.search {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* custom darkmode */
+.dark-mode-switch {
+  background-color: #232220;
+}
+.dark-mode-switch p {
+  color: #c2d0da;
+}
+.dark-mode-switch h3 {
+  color: #eee;
+}
+
+input.dark-mode-switch {
+  border-radius: 5px;
+  background-color: #232121;
+  color: #eee;
+}
+
+.header__right i.dark-mode-switch {
+  color: white;
+}
+
+section.Categories.dark-mode-switch {
+  background-color: #282828;
+}
+
+section.Services.overflow-hidden .dark-mode-switch .box-wrap,
+section.Services.overflow-hidden .dark-mode-switch .box-wrap .icon {
+  background-color: unset;
+}
+
+.res.dark-mode-switch .item .counter {
+  background-color: #282828;
+}
+.res.dark-mode-switch .item .counter .icon {
+  background-color: unset;
+}
+
+.res.dark-mode-switch .item h3 {
+  color: white;
+}
+
+.res.dark-mode-switch .counter:hover {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 5px 0px;
+
+  transform: translateY(-10px);
+  transition: 0.7s;
+}
+
+section.Blog.dark-mode-switch {
+  background-color: #282828;
+}
+
+section.Blog.dark-mode-switch * {
+  background-color: #282828;
+  color: white;
+}
+
+section.Blog.dark-mode-switch a {
+  background-color: #282828;
+  color: white;
+  text-decoration: none;
+  padding-left: 6px;
+}
+section.footer input.dark-mode-switch#form-1 {
+  background-color: #232220;
 }
