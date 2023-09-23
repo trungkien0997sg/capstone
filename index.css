@@ -678,8 +678,8 @@ section.Blog .title-2 {
 section.Blog .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /* margin-right: -15px; */
+  /* margin-left: -15px; */
 }
 section.Blog .mt-5 {
   margin-top: 3rem !important;
