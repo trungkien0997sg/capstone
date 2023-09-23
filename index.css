@@ -919,6 +919,10 @@ section.testimonials .title-2 {
   color: rgb(211, 211, 211);
 }
 
+.footer .form input:focus {
+  outline: #ff6600 1px solid;
+}
+
 /* start copyright */
 .copyright {
   padding: 0.5rem 0;
@@ -1293,4 +1297,5 @@ section.Blog.dark-mode-switch a {
 
 section.footer input.dark-mode-switch#form-1 {
   background-color: #232220;
+  color: white;
 }
