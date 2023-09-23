@@ -891,7 +891,7 @@ section.testimonials .title-2 {
   font-size: 18px;
   line-height: 28px;
   border: 1px solid transparent;
-  width: 70%;
+  width: 100%;
   color: rgba(22, 28, 45, 0.6);
   background: white;
   border-radius: 6px;
@@ -910,8 +910,9 @@ section.testimonials .title-2 {
   transition: 0.3s;
   background-color: #ff6600;
   border-radius: 5px;
-  width: 70%;
+  width: 100%;
 }
+
 .footer .form .btn-form:hover {
   background-color: #b24903;
   transition: 0.5s;
