@@ -1233,6 +1233,14 @@ section.Services.overflow-hidden .dark-mode-switch .box-wrap .icon {
   background-color: unset;
 }
 
+section.Services .dark-mode-switch .box-wrap .info * {
+  color: #eee;
+}
+
+section.Services .dark-mode-switch .box-wrap .info h4:hover {
+  color: #ff6600;
+}
+
 .w3-stats .item.dark-mode-switch .counter {
   background-color: #282828;
 }
@@ -1278,6 +1286,11 @@ section.Blog.dark-mode-switch a {
   text-decoration: none;
   padding-left: 6px;
 }
+
+.banner__hoang.dark-mode-switch .carousel-text {
+  color: #eee;
+}
+
 section.footer input.dark-mode-switch#form-1 {
   background-color: #232220;
 }
